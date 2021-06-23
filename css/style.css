@@ -1,0 +1,287 @@
+html {
+	scroll-behavior: smooth;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #3d3d3d;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow:  0 4px 8px 0 white, 0 6px 20px 0 #463B6B; 
+}
+
+#myBtn:hover {
+  background-color: #463B6B;
+}
+.top {
+	display: flex;
+	justify-content: space-between;
+
+}
+.logoo{
+
+	display: flex;
+	align-items: left;
+	font-size: 2vw;
+
+}
+.logo {
+	margin-top: 10px;
+	height: auto;
+	width: 100%;
+	max-width: 200px;
+	
+	
+}
+.nav a.active {
+	background-color: #3d3d3d;
+}
+.icons {
+	
+	padding: 10px 10px;
+	float: right;
+}
+.nav  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #463B6B;
+	/*position: sticky;
+    top: 0;
+    z-index: 0;*/
+}
+.nav > a {
+	color: white;
+    padding: 25px 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav > a:hover {
+    background-color: #3d3d3d;
+	color: white;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: 500px;
+}
+.gallery {
+	text-align: center;
+}
+.shoe {
+	height: 100px;
+	width: 200px;
+}
+
+.row1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.column1 {
+	padding: 40px 60px;
+}
+
+.column1:hover {
+	  box-shadow:  0 4px 8px 0 #3d3d3d, 0 6px 20px 0 #463B6B; 
+	  border-bottom: 1px solid #3d3d3d; 
+}
+.price {
+	color: grey;
+}
+.selfbutton {
+	background-color: #463B6B;
+	color: white;
+	padding: 10px 20px;
+	border:none;
+	border-radius: 4px;
+}
+.selfbutton:hover {
+	background-color: #3d3d3d;
+}
+.gallery2 {
+	background-color: #ECECEC;
+	text-align:center;
+}
+.iphone {
+	height: 200px;
+	width: 100px;
+}
+.footer {
+	text-align: center;
+	background-color: #463B6B;
+	font-weight: bold;
+}
+
+.footer > div > a{
+    color: white;
+    text-decoration: none;
+	padding: 20px;
+}
+.f-icons {
+	padding: 5px;
+}
+.icons:hover {
+	color: #463B6B;
+}
+.back {
+	background-image: url('../images/back.png');
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-weight: bold
+
+}
+
+.column2 {
+	background-color: #cccccc;
+	padding: 60px 80px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 #463b6b;
+	text-align: center;
+
+}
+.column2:hover {
+	box-shadow:  0 4px 8px 0 #3d3d3d, 0 6px 20px 0 #463B6B; 
+	border-bottom: 1px solid #3d3d3d; 
+
+}
+.shoe1 {
+	padding: 20px;
+}
+.description {
+	font-style: italic;
+}
+.banner {
+	text-align: center;
+	
+
+}
+.row2 {
+	display: flex;
+	flex-direction: row;
+	padding: 50px 100px;
+}
+.side1 {
+	flex: 50%;
+	padding: 20px;
+}
+.side2 {
+	flex: 50%;
+	padding: 30px;
+}
+.row3 {
+	display: flex;
+    flex-direction: row;
+	padding: 50px 100px;
+	
+}
+.side3 {
+	flex: 60%;
+	background-color:#ECECEC; 
+	box-shadow: 0 4px 8px 0 #463b6b;
+	padding: 20px;
+}
+
+.side3 > form > input{
+	width: 100%;
+	height: 40px;
+	border:none;
+	border-radius: 4px;
+
+}
+.side3 > form > textarea{
+	width: 100%;
+	height: 100px;
+	border:none;
+	border-radius: 4px;
+
+
+}
+.side4 {
+	flex: 40%;
+	padding: 50px;
+	
+}
+.nav a.icon {
+	display: none;
+}
+
+@media screen and (max-width: 768px)
+{
+	.nav a {
+		display: none;
+	}
+	.nav a.icon {
+		display: flex;
+	
+	}
+	.nav a.icon:hover {
+		background-color: transparent;
+	}
+}
+@media screen and (max-width: 768px) {
+
+  .nav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+	.nav {
+		flex-direction: column;
+	}
+	.row2 {
+		flex-direction: column;
+	}
+	.row3 {
+		flex-direction: column;
+
+	}
+	.side4 {
+		padding: 10px 5px;
+	}
+	.f-img {
+		width: 100%;
+		height: auto;
+		max-width: 300px;
+	}
+
+   
+}
+@media screen and (max-width: 968px)
+{
+	.row1 {
+		flex-direction: column;
+	
+	}
+	.column1 {
+		margin: auto;
+	}
+	.column2 {
+		
+		margin: auto;
+
+	}
+
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	   <div class="top" style="background-color: #F7F7F5;">
+        <div class="logoo">
+            <div style="width: 3em; height: 2em;">
+    <img src="C:\Users\hAMZA\Desktop\web\Web Project 1\Web Project 1\images\logo.jpg" style="width: 100%; height:100%;"></div>
+        <p class="logo" style="font-weight: bold;">KhareedLow</p></div>
+        <div style="margin-top: 10px; margin-right: 10px;">
+            <i class="fa fa-facebook-official icons" style="font-size: 30px"></i>
+            <i class="fa fa-instagram icons" style="font-size: 30px"></i>
+            <i class="fa fa-whatsapp icons" style="font-size: 30px;" ></i>
+             <i class="fa fa-twitter icons" style="font-size: 30px;" ></i>
+        </div>
+    </div>
+	<div class="nav sticky-top" id="mynav">
+		 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+		<a href="#" onclick="home()">Home</a>
+		<a href="#" onclick="about()">About Us</a>
+		<a href="#" onclick="product()">Products</a>
+		<a href="#" onclick="contact()" class="active">Contact Us</a>
+	</div>
+<br>
+	<div class="banner">
+	    <h1 style="text-align: center;">Contact Us</h1><br><br>
+    </div>
+
+    <div class="row3">
+    	<div class="side3">
+    	<h3>Get in Touch</h3><br>
+        
+
+
+    	<form onsubmit="return alertdemo()" name="myform">
+    		
+    		<label>Name:</label><input type="text" name="name" id="name" placeholder="Your Full Name" required><p id="nam"></p><br><br>
+    		<label>Email:</label><input type="email" name="email" placeholder="Your Email Address" required><div class="ema"></div><br><br>
+    		<label>Phone:</label><input type="phone" name="phone" placeholder="+92**************" required><div class="pho"></div><br><br>
+    		<label>Comments:</label><textarea rows="4" cols="50" placeholder="Write Message...."></textarea>
+    		<br><br>
+    		<input type="submit" name="Sumbit" value="submit" class="selfbutton">
+    	</form>
+    	</div>
+
+    	<div class="side4">
+    		<h3>Address</h3>
+    		<p>501 Silverside road,Suite 105, Wilmington, USA</p>
+    		<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Wilmington&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embedgooglemap.xyz/"></a></div><style>.mapouter{position:relative;text-align:right;width:300px;height:300px;}.gmap_canvas {overflow:hidden;background:none!important;width:300px;height:300px;}.gmap_iframe {width:300px!important;height:300px!important;}</style></div>
+    	</div>
+    </div>
+
+    
+
+
+	  <div class="footer"><br><br>
+        <h1 style="font-size: 80px; color: white;">KhareedLow</h1><br>
+            <div class="links">
+            <a href="#">Home</a>
+            <a href="#" onclick="aboutus()">About us</a>
+            <a href="#" onclick="products()">Products</a>
+            <a href="#"onclick="contactus()">Contact Us</a>
+            <hr>
+
+            <i class="fa fa-facebook-official f-icons " style="font-size: 30px; color:white;"></i>
+            <i class="fa fa-instagram f-icons " style="font-size: 30px; color:white;"></i>
+             <i class="fa fa-twitter f-icons " style="font-size: 30px; color:white;"></i>
+            <i class="fa fa-whatsapp f-icons " style="font-size: 30px; color:white;" ></i>
+            <br><br>
+
+
+        </div>
+
+    </div>
+     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script >
+	    var mybutton = document.getElementById("myBtn");
+ 
+      // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        }
+        else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    function myFunction(){
+        var x= document.getElementById('mynav');
+        if(x.className === "nav"){
+            x.className +=" responsive";
+        }
+        else{
+            x.className="nav";
+        }
+    }
+	function alertdemo()
+	{ 
+		var a=document.myform.name.value
+        if(a.length <9)
+        { 
+
+           document.getElementById(nam).innerHTML="asa";
+           return false;
+        }
+
+
+	
+		
+
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	   <div class="top" style="background-color: #F7F7F5;">
+        <div class="logoo">
+            <div style="width: 3em; height: 2em;">
+    <img src="C:\Users\hAMZA\Desktop\web\Web Project 1\Web Project 1\images\logo.jpg" style="width: 100%; height:100%;"></div>
+        <p class="logo" style="font-weight: bold;">KhareedLow</p></div>
+        <div style="margin-top: 10px; margin-right: 10px;">
+            <i class="fa fa-facebook-official icons" style="font-size: 30px"></i>
+            <i class="fa fa-instagram icons" style="font-size: 30px"></i>
+            <i class="fa fa-whatsapp icons" style="font-size: 30px;" ></i>
+             <i class="fa fa-twitter icons" style="font-size: 30px;" ></i>
+        </div>
+    </div>
+
+	<div class="nav sticky-top" id="mynav">
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+			<a href="#" onclick="home()">Home</a>
+			<a href="#" onclick="about()" class="active">About Us</a>
+			<a href="#" onclick="product()">Products</a>
+			<a href="#" onclick="contact()">Contact Us</a>
+	</div>
+
+	<div class="banner">
+        <div class="container-fluid"></div>
+	   <img src="C:\Users\hAMZA\Desktop\web\Web Project 1\Web Project 1\images\banner.jpg"><br><br>
+    </div><br><br>
+
+    <div class="row2">
+    	<div class="side1">
+    		<h1>Lorem Ipsum is simply dummy text </h1>
+    		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    	</div>
+
+    	<div class="side2">
+    		<img src="../images/img3.jpg" style="max-width: 500px;max-height: 300px;">
+    	</div>
+    </div><br><br>
+
+
+	  <div class="footer"><br><br>
+        <h1 style="font-size: 80px; color: white;">KhareedLow</h1><br>
+            <div class="links">
+            <a href="#">Home</a>
+            <a href="#" onclick="aboutus()">About us</a>
+            <a href="#" onclick="products()">Products</a>
+            <a href="#"onclick="contactus()">Contact Us</a>
+            <hr>
+
+            <i class="fa fa-facebook-official f-icons " style="font-size: 30px; color:white;"></i>
+            <i class="fa fa-instagram f-icons " style="font-size: 30px; color:white;"></i>
+             <i class="fa fa-twitter f-icons " style="font-size: 30px; color:white;"></i>
+            <i class="fa fa-whatsapp f-icons " style="font-size: 30px; color:white;" ></i>
+            <br><br>
+
+
+        </div>
+
+    </div>
+    <script >
+            var mybutton = document.getElementById("myBtn");
+ 
+      // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        }
+        else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    function myFunction(){
+        var x= document.getElementById('mynav');
+        if(x.className === "nav"){
+            x.className +=" responsive";
+        }
+        else{
+            x.className="nav";
+        }
+    }
+        
+    </script>
+
+
+</body>
+</html>
